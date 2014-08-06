@@ -1,0 +1,73 @@
+prospective
+===========
+10,000 foot: Automation of the process of submitting bottlings for consideration by WineSpectator. Essentially a web portal with user accounts that tracks the statuses of prospctuses.
+
+Technology:
+  - Rails 4
+    - Devise
+    - APIPie
+    - CanCan
+    - annotate_models
+    - FactoryGirl / Capybara ( whatever the testing framework was in the rails tutorial - just copy its user system )
+    ? Email
+
+Approval workflow:
+  1) Importer/Winemaker submits form request
+  2) ATC receives, assigns to Taster
+  3) Taster approves, denies bottlings, assigns back to Importer/Winemaker
+  4) Importer/Winemaker sends bottlings
+  5) ATC receives bottlings, enters them into inventory
+
+App Workflow:
+  1) Users signs up for account
+  2) User logs in
+  <> User is internal
+      1) User reviews newly submitted prospectuses
+      2) User actions outstanding prospectuses
+      <> User is ATC
+      <> User is Taster
+      <> User is Admin
+  <> User is external
+    1) CRUD their own prospectuses
+    2) May assign back to us
+
+Prospectus status:
+  1) New
+  2) Submitted
+  3) In Review ( assigned to whom? )
+    4) Bottles requested
+    5) Bottles received
+  6) Finalized
+
+Prospectus actions ( client ):
+  - Submit application
+  - Mail in approved bottles
+
+Prospectus actions( admin ):
+  - Review new prosposals:
+    1) Assign to taster
+    2) Approve selected bottlings
+  - Approve selected bottlings
+  - Receive bottles sent
+  - Chase up bottles that have not been received
+
+Features:
+  - Audit trail of assignments / updates
+  - Ability to 're-submit' an application
+  - Search
+    - statuses
+    - all prospectuses for a external user
+    - all wines in all prospectuses
+    - wine makers
+  - De-couple from WineDB. Too hard.
+  - "Notifications"
+
+Models
+======
+
+- User
+- Group
+- Rights ( cancan )
+- Prospectus_revision ( would be nice to model the prospectuses through time )
+- Bottling
+

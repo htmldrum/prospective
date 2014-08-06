@@ -1,0 +1,7 @@
+Todo
+===
+
+1) Mock out app on paper
+2) Implement HTML mocks
+3) Get approval from Alison
+4) Begin to implement in Rails
