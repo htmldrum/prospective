@@ -1,4 +1,9 @@
 Client mocks
 ============
 
-- 
+X Login
+- Register
+X Recover password
+- Dashboard
+- Notifications
+- Profile

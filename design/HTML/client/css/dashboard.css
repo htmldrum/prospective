@@ -104,3 +104,50 @@ body {
   border-radius: 50%;
 }
 
+/*
+
+  Site-wide styles
+
+  Key
+
+  blue: rgb(0, 136, 255);
+  aqua: #C5F2E1 ( #C5F2E1 )
+  font: #646A68
+
+*/
+
+.navbar {
+  background-color: #C5F2E1;
+}
+.navbar a {
+  color: #646A68;
+  font-weight: 800;
+}
+.navbar a.active {
+  color: rgb(0, 136, 255);
+}
+.navbar a:hover {
+  color: rgb(0, 136, 255);
+}
+.nav>li>a:hover {
+  text-decoration: underline;
+  background-color: initial;
+}
+
+a {
+  color: rgb( 0, 136, 255 );
+}
+
+a.navbar-brand {
+  font-weight: 100;
+}
+
+img.nav-logo {
+  max-height: 23px;
+}
+p.bg-info {
+  padding: 20px;
+  background-color: #C5F2E1;
+  color: #646A68;
+  border-radius: 15px;
+}
