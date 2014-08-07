@@ -155,3 +155,8 @@ p.bg-info {
 .prospectus-summary:hover > .alert-warning {
   background-color: #faebcc;
 }
+
+.label-inactive {
+  border: 1px solid #ACACAC;
+  color: #ACACAC;
+}
