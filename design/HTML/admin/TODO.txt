@@ -1,0 +1,9 @@
+Client mocks
+============
+
+X Login
+X Register
+X Recover password
+- Dashboard
+- Notifications
+- Profile

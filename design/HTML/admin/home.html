@@ -41,7 +41,10 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/notifications.html">Notifications</a></li>
+            <li><a href="/assigned_to_me.html">Assigned To Me</a></li>
+            <li><a href="/prospectuses.html">Prospectuses</a></li>
+            <li><a href="/bottlings.html">Bottlings</a></li>
+            <li><a href="/users.html">Users</a></li>
             <li><a href="/profile.html">Profile</a></li>
             <li><a href="/">Sign Out</a></li>
           </ul>
@@ -52,27 +55,36 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-2 sidebar">
+          <p>Welcome back, Alison</p>
           <div class="alert alert-danger">
-            <p>Please action the following outstanding items:</p>
-            <ul>
-              <li>Please send bottlings for <a href="/prospectus_awaiting_bottles.html">Prospectus #446</a></li>
-            </ul>
+            <p>You currently have 8 outstanding prospectuses, the oldest from 4/1/14.</p>
           </div>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Dashboard</h1>
           <div class="row">
-            <div class="col-sm-9 col-md-10">
-              <p style="margin-left:20px;">Welcome to Wine Spectator Prospective.<br> Here you can review the status of submitted prospectuses, update your profile information or submit a new prospectus of wine for Wine Spectator to review.</p>
+            <div class="col-md-2">
+              <p class="text-center">New</p>
+              <h1 class="alert alert-info text-center">8</h1>
+            </div>
+            <div class="col-md-2">
+              <p class="text-center">Awaiting Approval</p>
+              <h1 class="alert alert-warning text-center">10</h1>
+            </div>
+            <div class="col-md-2">
+              <p class="text-center">Awaiting Confirmation</p>
+              <h1 class="alert alert-danger text-center">11</h1>
+            </div>
+            <div class="col-md-2">
+              <p class="text-center">Awaiting Bottlings</p>
+              <h1 class="alert alert-success text-center">13</h1>
+            </div>
+            <div class="col-md-2">
+              <p class="text-center">Finalized</p>
+              <h1 class="alert alert-default text-center">2000</h1>
             </div>
           </div>
-          <h2 class="sub-header">New Prospectus</h2>
-          <div class="row">
-            <div class="col-sm-9 col-md-10">
-              <a style="margin-left:20px;" class="btn btn-info" href="/prospectus_new.html"><span class="glyphicon glyphicon-plus"></span> New Prospectus</a>
-            </div>
-          </div>
-          <h2 class="sub-header">Recently Submitted Prospectuses</h2>
+          <h2 class="sub-header">Recently Updated Prospectuses</h2>
           <div class="row">
             <div class="col-md-9">
               <a class="prospectus-summary" href="/prospectus_awaiting_bottles.html">
@@ -116,11 +128,16 @@
           <div class="row">
             <div class="col-md-9">
               <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
                 <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
               </ul>
             </div>
           </div>
-
         </div>
       </div>
     </div>
