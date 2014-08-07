@@ -160,3 +160,8 @@ p.bg-info {
   border: 1px solid #ACACAC;
   color: #ACACAC;
 }
+
+.bottling_form {
+  color: #31708F;
+  border-color: #BCE8F1;
+}
