@@ -2,7 +2,7 @@ Client mocks
 ============
 
 X Login
-- Register
+X Register
 X Recover password
 - Dashboard
 - Notifications

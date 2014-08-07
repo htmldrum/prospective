@@ -151,3 +151,7 @@ p.bg-info {
   color: #646A68;
   border-radius: 15px;
 }
+
+.prospectus-summary:hover > .alert-warning {
+  background-color: #faebcc;
+}
