@@ -4,6 +4,9 @@ Client mocks
 X Login
 X Register
 X Recover password
-- Dashboard
-- Notifications
+X Dashboard
+- Assigned To Me
+- Prospectus Search
+- Bottling Search
+- User search
 - Profile

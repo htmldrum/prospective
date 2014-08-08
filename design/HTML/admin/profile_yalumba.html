@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Wine Spectator Prospective: Incoming Inventory Management</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/dashboard.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/home.html">
+            <img src="/img/ws-initials.png" class="nav-logo">
+            Prospective
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/assigned_to_me.html">Assigned To Me</a></li>
+            <li><a href="/prospectuses.html">Prospectuses</a></li>
+            <li><a href="/bottlings.html">Bottlings</a></li>
+            <li><a class="active" href="/users.html">Users</a></li>
+            <li><a href="/profile.html">Profile</a></li>
+            <li><a href="/">Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 sidebar">
+          <p>Welcome back, Alison</p>
+          <div class="alert alert-danger">
+            <p>You currently have 8 outstanding prospectuses, the oldest from 4/1/14.</p>
+          </div>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Profile: Yalumba</h1>
+          <form role="form">
+            <div class="row">
+              <div class="col-md-4 ">
+                <div class="form-group">
+                  <label class="control-label" for="email">Email </label>
+                  <input type="text" class="form-control" id="email" value="info@yalumba.com">
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="Title">Title</label>
+                  <input type="text" class="form-control" id="title" value="Yalumba">
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="role">Role</label>
+                  <select class="form-control">
+                    <option>Importer</option>
+                    <option>Winery</option>
+                    <option>Role</option>
+                    <option>Chateau</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="Address">Address</label>
+                  <input type="text" class="form-control" id="address" value="432 Maple St Unit #4">
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="City">City</label>
+                  <input type="text" class="form-control" id="address" value="Ramona">
+                </div>
+              </div>
+              <div class="col-md-4 ">
+                <div class="form-group">
+                  <label class="control-label" for="State">State</label>
+                  <input type="text" class="form-control" id="address" value="CA">
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="Zip">Zip</label>
+                  <input type="text" class="form-control" id="address" value="92065">
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="Contact Name">Contact Name</label>
+                  <input type="text" class="form-control" id="address" value="Nicole Preiss">
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="Phone">Phone ( including international prefix )</label>
+                  <input type="text" class="form-control" id="address" value="+17607899000">
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="Fax">Fax ( including international prefix )</label>
+                  <input type="text" class="form-control" id="address" placeholder="Fax">
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="Website">Website</label>
+                  <input type="text" class="form-control" id="address" value="hpsepicurean.com">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <button type="button" id="submit" class="btn btn-default btn-block"><a href="/profile.html">Save</a></button>
+                </div>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+          </form>
+          <h2 class="sub-header">Recently Updated Prospectuses</h2>
+          <div class="row">
+            <div class="col-md-9">
+              <a class="prospectus-summary" href="/prospectus_awaiting_bottles.html">
+                <div class="alert alert-warning" role="alert">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <h4>Prospectus #446</h4>
+                      <h6>Submitted 3/18/2015</h6>
+                      <p><span class="label label-success">Awaiting bottles</span></p>
+                    </div>
+                    <div class="col-md-7">
+                      <ul class="list-group">
+                        <li class="list-group-item">Insolia</li>
+                        <li class="list-group-item">Syrah</li>
+                        <li class="list-group-item">Nero d'Avola</li>
+                        <li class="list-group-item">And 3 others</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="prospectus-summary" href="/prospectus_finalized.html">
+                <div class="alert alert-warning" role="alert">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <h4>Prospectus #438</h4>
+                      <h6>Submitted 3/11/2015</h6>
+                      <p><span class="label label-default">Finalized</span></p>
+                    </div>
+                    <div class="col-md-7">
+                      <ul class="list-group">
+                        <li class="list-group-item">Chardonnay</li>
+                        <li class="list-group-item">Catarratto</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9">
+              <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.js"></script>
+</body>
+</html>

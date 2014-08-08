@@ -41,8 +41,11 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/notifications.html">Notifications</a></li>
-            <li><a href="/profile.html" >Profile</a></li>
+            <li><a href="/assigned_to_me.html">Assigned To Me</a></li>
+            <li><a class="active" href="/prospectuses.html">Prospectuses</a></li>
+            <li><a href="/bottlings.html">Bottlings</a></li>
+            <li><a href="/users.html">Users</a></li>
+            <li><a href="/profile.html">Profile</a></li>
             <li><a href="/">Sign Out</a></li>
           </ul>
         </div>
@@ -52,36 +55,50 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-2 sidebar">
-          <div class="alert alert-danger">
-            <h4>Awaiting Bottles</h4>
-            <p><span class="label label-inactive">New</span><a href="/prospectus_new.html">    +</a></p>
-            <p><span class="label label-inactive">Awaiting Approval</span><a href="/prospectus_awaiting_approval.html">    +</a></p>
-            <p><span class="label label-danger">Awaiting Bottles</span><a href="/prospectus_awaiting_bottles.html">    +</a></p>
-            <p><span class="label label-inactive">Awaiting Receipt</span><a href="/prospectus_awaiting_receipt.html">    +</a></p>
-            <p><span class="label label-inactive">Finalized</span><a href="/prospectus_finalized.html">    +</a></p>
+          <div class="alert">
+            <h4>Status: Awaiting Bottles</h4>
+            <p>Revisions</p>
+            <ul>
+              <li><a href="#">4/1/2015</a></li>
+              <li><a href="#">4/2/2015</a></li>
+              <li><a href="#">4/3/2015</a></li>
+              <li>4/4/2015</li>
+            </ul>
             <br>
-            <p>Please review the prospectus for bottlings that have been selected by Wine Spectator and send them for review.</p>
+            <p>Client has confirmed they have sent the approved bottles. Once these bottles are received, update the status to 'finalized' and click "Update" .</p>
           </div>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Prospectus #446</h1>
-          <p>Submitted 3/18/2015. Last updated 3/21/2015 by Alison Napjus</p>
+          <p>Submitted 4/1/2015 by <a href="/profile_HPSepicurean.html">HPSepicurean</a>. Updated on 4/3/2015 by <a href="/profile_HPSepicurean.html">HPSepicurean</a>.</p>
           <div class="row">
-            <div class="col-md-9">
-              <p class="alert alert-success">
-              Wine Spectator has reviewed your application and requests that you please forward the following 'Approved' bottlings for review. Samples that are not approved will not be considered.<br>
-              When submitting samples, please attach the following <a target="_blank" href="/qr_code.html">QR code</a> to the exterior of the package for processing.<br>
-              Samples can be sent to:<br></p>
-              <center><b>Wine Spectator, New York Tasting Office</b></center>
-              <center><b>387 Park Avenue South</b></center>
-              <center><b>New York, NY, United States, 10016</b></center>
-              <br>
-              <p class="alert alert-success">
-                Once you have sent the samples, please let us know by clicking "Sent"
-              </p>
-              <center><a class="btn btn-success"><span style="margin-right:5px;" class="glyphicon glyphicon-inbox"></span> Sent</a></center>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+              Assignee: <input type="text" placeholder="Autocomplete">
             </div>
+            <div class="col-md-2">
+              Status:
+              <select>
+                <option>Awaiting Bottles</option>
+                <option>Finalized</option>
+                <option>New</option>
+                <option>Awaiting Approval</option>
+                <option>Awaiting Receipt</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1"></div>
           </div>
+          <br>
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-2">
+              <a href="/prospectuses.html" style="margin-left:5px;" class="btn btn-info">Update</a>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+          <br>
           <h4 class="sub-header">Approved</h4>
           <div class="row">
             <div class="col-md-9">

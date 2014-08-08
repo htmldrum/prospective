@@ -41,8 +41,11 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/notifications.html">Notifications</a></li>
-            <li><a href="/profile.html" >Profile</a></li>
+            <li><a href="/assigned_to_me.html">Assigned To Me</a></li>
+            <li><a class="active" href="/prospectuses.html">Prospectuses</a></li>
+            <li><a href="/bottlings.html">Bottlings</a></li>
+            <li><a href="/users.html">Users</a></li>
+            <li><a href="/profile.html">Profile</a></li>
             <li><a href="/">Sign Out</a></li>
           </ul>
         </div>
@@ -52,23 +55,52 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-2 sidebar">
-          <div class="alert alert-warning">
-            <h4>Awaiting Approval</h4>
-            <p><span class="label label-inactive">New</span><a href="/prospectus_new.html">    +</a></p>
-            <p><span class="label label-warning">Awaiting Approval</span><a href="/prospectus_awaiting_approval.html">    +</a></p>
-            <p><span class="label label-inactive">Awaiting Bottles</span><a href="/prospectus_awaiting_bottles.html">    +</a></p>
-            <p><span class="label label-inactive">Awaiting Receipt</span><a href="/prospectus_awaiting_receipt.html">    +</a></p>
-            <p><span class="label label-inactive">Finalized</span><a href="/prospectus_finalized.html">    +</a></p>
+          <div class="alert">
+            <h4>Status: Awaiting Approval</h4>
+            <p>Revisions</p>
+            <ul>
+              <li><a href="#">4/1/2015</a></li>
+              <li>4/2/2015</li>
+            </ul>
             <br>
-            <p>Your prospectus has been receieved and Wine Spectator is considering it for tasting.</p>
+            <p>Please select the bottlings you wish to approve, update the status, assign the prospectus back to the client and click "Update"</p>
           </div>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Prospectus #446</h1>
-          <p>Submitted 3/18/2015. Last updated 3/20/2015 by ATC</p>
+          <p>Submitted 3/18/2015 by <a href="/profile_HPSepicurean.html">HPSepicurean</a>. Last updated 3/20/2015 by <a href="/profile_jd.html">Jane Doe</a>. Currently asisgned to <a href="/profile_an.html">Alison Napjus</a>.</p>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+              Assignee: <input type="text" placeholder="Autocomplete">
+            </div>
+            <div class="col-md-2">
+              Status:
+              <select>
+                <option>Awaiting Approval</option>
+                <option>New</option>
+                <option>Awaiting Bottles</option>
+                <option>Awaiting Receipt</option>
+                <option>Finalized</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-2">
+              <a href="/prospectuses.html" style="margin-left:5px;" class="btn btn-info">Update</a>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+          <br>
           <div class="row">
             <div class="col-md-9">
               <div class="notification alert alert-warning" role="alert">
+                <div class="pull-right"> Approved: <input type="checkbox"></div>
                 <h4>Insolia</h4>
                 <p><b>Producer Name:</b> Guastella Azienda Vitivinicola</p>
                 <p><b>Vintage:</b> 2011</p>
@@ -82,6 +114,7 @@
           <div class="row">
             <div class="col-md-9">
               <div class="notification alert alert-warning" role="alert">
+                <div class="pull-right"> Approved: <input type="checkbox"></div>
                 <h4>Syrah</h4>
                 <p><b>Producer Name:</b> Guastella Azienda Vitivinicola</p>
                 <p><b>Vintage:</b> 2012</p>
@@ -95,6 +128,7 @@
           <div class="row">
             <div class="col-md-9">
               <div class="notification alert alert-warning" role="alert">
+                <div class="pull-right"> Approved: <input type="checkbox"></div>
                 <h4>Nero d'Avola</h4>
                 <p><b>Producer Name:</b> Guastella Azienda Vitivinicola</p>
                 <p><b>Vintage:</b> 2012</p>
@@ -108,6 +142,7 @@
           <div class="row">
             <div class="col-md-9">
               <div class="notification alert alert-warning" role="alert">
+                <div class="pull-right"> Approved: <input type="checkbox"></div>
                 <h4>Chardonnay</h4>
                 <p><b>Producer Name:</b> Guastella Azienda Vitivinicola</p>
                 <p><b>Vintage:</b> 2012</p>
@@ -121,6 +156,7 @@
           <div class="row">
             <div class="col-md-9">
               <div class="notification alert alert-warning" role="alert">
+                <div class="pull-right"> Approved: <input type="checkbox"></div>
                 <h4>Catarratto</h4>
                 <p><b>Producer Name:</b> Guastella Azienda Vitivinicola</p>
                 <p><b>Vintage:</b> 2012</p>

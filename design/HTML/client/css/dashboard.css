@@ -165,3 +165,6 @@ p.bg-info {
   color: #31708F;
   border-color: #BCE8F1;
 }
+input.table-header {
+  border: none;
+}

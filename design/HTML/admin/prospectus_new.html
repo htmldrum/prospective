@@ -41,8 +41,11 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/notifications.html">Notifications</a></li>
-            <li><a href="/profile.html" >Profile</a></li>
+            <li><a href="/assigned_to_me.html">Assigned To Me</a></li>
+            <li><a class="active" href="/prospectuses.html">Prospectuses</a></li>
+            <li><a href="/bottlings.html">Bottlings</a></li>
+            <li><a href="/users.html">Users</a></li>
+            <li><a href="/profile.html">Profile</a></li>
             <li><a href="/">Sign Out</a></li>
           </ul>
         </div>
@@ -52,275 +55,125 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-2 sidebar">
-          <div class="alert alert-info">
-            <h4>New Prospectus</h4>
-            <p><span class="label label-info">New</span><a href="/prospectus_new.html">    +</a></p>
-            <p><span class="label label-inactive">Awaiting Approval</span><a href="/prospectus_awaiting_approval.html">    +</a></p>
-            <p><span class="label label-inactive">Awaiting Bottles</span><a href="/prospectus_awaiting_bottles.html">    +</a></p>
-            <p><span class="label label-inactive">Awaiting Receipt</span><a href="/prospectus_awaiting_receipt.html">    +</a></p>
-            <p><span class="label label-inactive">Finalized</span><a href="/prospectus_finalized.html">    +</a></p>
+          <div class="alert">
+            <h4>Status: New</h4>
+            <p>Revisions</p>
+            <ul>
+              <li>4/1/2015</li>
+            </ul>
             <br>
-            <p>Please fill out and submit the prospectus and Wine Spectator will consider your request shortly.</p>
+            <p>Please assign the prospectus to the appropriate person for review, update the status to 'Awaiting Approval' and click "Update"</p>
           </div>
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">New Prospectus</h1>
-          <p>Please add as many wines as you wish considered, filling the form as appropriate.</p>
-          <div class="row">
-            <div class="col-md-9">
-              <a style="margin-left:20px;" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span> Add Bottling</a>
-              <a style="margin-left:5px;" class="btn btn-info"><span class="glyphicon glyphicon-arrow-right"></span> Submit</a>
-              <a style="margin-left:5px;" class="btn btn-info"><span class="glyphicon glyphicon-remove"></span> Cancel</a>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-md-10">
-              <div class="bottling_form alert">
-                <span class="glyphicon glyphicon-remove pull-right"></span>
-                <form role="form">
-                  <div class="row">
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label class="control-label" for="wine_producer_name">Wine Producer Name</label>
-                        <input type="text" class="form-control" id="wine_producer_name" value="Guastella Azienda Vitivinicola" >
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Wine Name ( including appellation )</label>
-                        <input type="text" class="form-control" id="wine_name" value="Insolia">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Vintage</label>
-                        <input type="text" class="form-control" id="wine_name" value="2011">
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Cases Produced</label>
-                        <input type="text" class="form-control" id="wine_name" value="5416">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Cases Imported</label>
-                        <input type="text" class="form-control" id="wine_name" value="810">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="retail_price">Retail Price</label>
-                        <input type="text" class="form-control" id="retail_price" value="$18.95">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-10">
-                      <div class="form-group">
-                        <label class="control-label" for="retail_price">Other Info/Misc</label>
-                        <input type="text" class="form-control" id="retail_price" value="These 17 year old vines are in mixed soil tending towards clay soil">
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-10">
-              <div class="bottling_form alert">
-                <span class="glyphicon glyphicon-remove pull-right"></span>
-                <form role="form">
-                  <div class="row">
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label class="control-label" for="wine_producer_name">Wine Producer Name</label>
-                        <input type="text" class="form-control" id="wine_producer_name" value="Guastella Azienda Vitivinicola" >
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Wine Name ( including appellation )</label>
-                        <input type="text" class="form-control" id="wine_name" value="Syrah">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Vintage</label>
-                        <input type="text" class="form-control" id="wine_name" value="2012">
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Cases Produced</label>
-                        <input type="text" class="form-control" id="wine_name" value="5416">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Cases Imported</label>
-                        <input type="text" class="form-control" id="wine_name" value="1560">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="retail_price">Retail Price</label>
-                        <input type="text" class="form-control" id="retail_price" value="$18.95">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-10">
-                      <div class="form-group">
-                        <label class="control-label" for="retail_price">Other Info/Misc</label>
-                        <input type="text" class="form-control" id="retail_price" value="">
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-10">
-              <div class="bottling_form alert">
-                <span class="glyphicon glyphicon-remove pull-right"></span>
-                <form role="form">
-                  <div class="row">
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label class="control-label" for="wine_producer_name">Wine Producer Name</label>
-                        <input type="text" class="form-control" id="wine_producer_name" value="Guastella Azienda Vitivinicola" >
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Wine Name ( including appellation )</label>
-                        <input type="text" class="form-control" id="wine_name" value="Nero d'Avola">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Vintage</label>
-                        <input type="text" class="form-control" id="wine_name" value="2012">
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Cases Produced</label>
-                        <input type="text" class="form-control" id="wine_name" value="7750">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Cases Imported</label>
-                        <input type="text" class="form-control" id="wine_name" value="1560">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="retail_price">Retail Price</label>
-                        <input type="text" class="form-control" id="retail_price" value="$18.95">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-10">
-                      <div class="form-group">
-                        <label class="control-label" for="retail_price">Other Info/Misc</label>
-                        <input type="text" class="form-control" id="retail_price" value="These 17 year old vines are in soil composed of calcareous layers and mixed clay">
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-10">
-              <div class="bottling_form alert">
-                <span class="glyphicon glyphicon-remove pull-right"></span>
-                <form role="form">
-                  <div class="row">
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label class="control-label" for="wine_producer_name">Wine Producer Name</label>
-                        <input type="text" class="form-control" id="wine_producer_name" value="Guastella Azienda Vitivinicola" >
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Wine Name ( including appellation )</label>
-                        <input type="text" class="form-control" id="wine_name" value="Chardonnay">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Vintage</label>
-                        <input type="text" class="form-control" id="wine_name" value="2012">
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Cases Produced</label>
-                        <input type="text" class="form-control" id="wine_name" value="4416">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Cases Imported</label>
-                        <input type="text" class="form-control" id="wine_name" value="1560">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="retail_price">Retail Price</label>
-                        <input type="text" class="form-control" id="retail_price" value="$18.95">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-10">
-                      <div class="form-group">
-                        <label class="control-label" for="retail_price">Other Info/Misc</label>
-                        <input type="text" class="form-control" id="retail_price" value="These 12 year old vines with soil tending towards primarily clay with deeper calcareous layers.">
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-10">
-              <div class="bottling_form alert">
-                <span class="glyphicon glyphicon-remove pull-right"></span>
-                <form role="form">
-                  <div class="row">
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label class="control-label" for="wine_producer_name">Wine Producer Name</label>
-                        <input type="text" class="form-control" id="wine_producer_name" value="Guastella Azienda Vitivinicola" >
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Wine Name ( including appellation )</label>
-                        <input type="text" class="form-control" id="wine_name" value="Catarratto">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Vintage</label>
-                        <input type="text" class="form-control" id="wine_name" value="2012">
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Cases Produced</label>
-                        <input type="text" class="form-control" id="wine_name" value="6666">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="wine_name">Cases Imported</label>
-                        <input type="text" class="form-control" id="wine_name" value="810">
-                      </div>
-                      <div class="form-group">
-                        <label class="control-label" for="retail_price">Retail Price</label>
-                        <input type="text" class="form-control" id="retail_price" value="$18.95">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-10">
-                      <div class="form-group">
-                        <label class="control-label" for="retail_price">Other Info/Misc</label>
-                        <input type="text" class="form-control" id="retail_price" value="These 20 year old vines are in mixed soil tending towards clay soil">
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-    </div>
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h1 class="page-header">Prospectus #448</h1>
+        <p>Submitted 3/18/2015 by <a href="/profile_HPSepicurean.html">HPSepicurean</a>. Last updated 3/20/2015 by <a href="/profile_HPSepicurean.html">HPSepicurean</a>. Currently asisgned to no one.</p>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            Assignee: <input type="text" placeholder="Autocomplete">
+          </div>
+          <div class="col-md-2">
+            Status:
+            <select>
+              <option>New</option>
+              <option>Awaiting Approval</option>
+              <option>Awaiting Bottles</option>
+              <option>Awaiting Receipt</option>
+              <option>Finalized</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-2">
+            <a href="/prospectuses.html" style="margin-left:5px;" class="btn btn-info">Update</a>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="notification alert alert-info" role="alert">
+              <h4>Insolia</h4>
+              <p><b>Producer Name:</b> Guastella Azienda Vitivinicola</p>
+              <p><b>Vintage:</b> 2011</p>
+              <p><b>Retail Price:</b> $18.95</p>
+              <p><b>Cases Produced:</b> 5416</p>
+              <p><b>Cases Imported:</b> 810</p>
+              <p><b>Other Info/Misc:</b> These 17 year old vines are in mixed soil tending towards the clay soil.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="notification alert alert-info" role="alert">
+              <h4>Syrah</h4>
+              <p><b>Producer Name:</b> Guastella Azienda Vitivinicola</p>
+              <p><b>Vintage:</b> 2012</p>
+              <p><b>Retail Price:</b> $18.95</p>
+              <p><b>Cases Produced:</b> 5416</p>
+              <p><b>Cases Imported:</b> 1560</p>
+              <p><b>Other Info/Misc:</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="notification alert alert-info" role="alert">
+              <h4>Nero d'Avola</h4>
+              <p><b>Producer Name:</b> Guastella Azienda Vitivinicola</p>
+              <p><b>Vintage:</b> 2012</p>
+              <p><b>Retail Price:</b> $18.95</p>
+              <p><b>Cases Produced:</b> 7750</p>
+              <p><b>Cases Imported:</b> 1560</p>
+              <p><b>Other Info/Misc:</b> These 17 year old vines are in soil composed of calcareous layers and mixed clay.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="notification alert alert-info" role="alert">
+              <h4>Chardonnay</h4>
+              <p><b>Producer Name:</b> Guastella Azienda Vitivinicola</p>
+              <p><b>Vintage:</b> 2012</p>
+              <p><b>Retail Price:</b> $18.95</p>
+              <p><b>Cases Produced:</b> 4416</p>
+              <p><b>Cases Imported:</b> 1560</p>
+              <p><b>Other Info/Misc:</b> These 12 year old vines with soil tending to be primarily clay with deeper caclcareous layers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="notification alert alert-info" role="alert">
+              <h4>Catarratto</h4>
+              <p><b>Producer Name:</b> Guastella Azienda Vitivinicola</p>
+              <p><b>Vintage:</b> 2012</p>
+              <p><b>Retail Price:</b> $18.95</p>
+              <p><b>Cases Produced:</b> 5416</p>
+              <p><b>Cases Imported:</b> 810</p>
+              <p><b>Other Info/Misc:</b> These 20 year old vines are in mixed soil tending towards the clay soil.</p>
+            </div>
+          </div>
+        </div>
 
-    <!-- Bootstrap core JavaScript
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/holder.js"></script>
-  </body>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.js"></script>
+</body>
 </html>
 
 
