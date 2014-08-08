@@ -19,5 +19,20 @@ module Prospective
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.s3 = {
+      :designs => {
+        :client => nil,
+        :admin => nil
+      },
+      :bucket_name => {
+        :client => 'ws_prospective_client',
+        :admin=> 'ws_prospective_admin'
+      },
+      :path => {
+        :client => 'design/HTML/client/',
+        :admin=> 'design/HTML/admin/'
+      }
+    }
+
   end
 end

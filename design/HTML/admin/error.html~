@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/img/favicon.ico">
+
+    <title>Wine Spectator Prospective: Incoming Inventory Management</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/dashboard.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+      <div style="margin-top: 2em; margin-bottom: 2em;" class="row">
+        <img class="center-block" src="/img/ws-logo-cyan.png">
+      </div>
+      <div style="margin-bottom: 2em;" class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <p class="bg-info">WS Prospective is Wine Spectator's portal for accepting potential bottlings for review. To suggest wine for review, please create an account, submit a prospectus and the Tasters at Wine Spectator will consider your request.</p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <form role="form">
+            <div class="form-group">
+              <label class="control-label" for="email">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="password">Password</label>
+              <input type="text" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <button type="button" id="submit" class="btn btn-default btn-block"><a href="/home.html">Login</a></button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <a style="margin-right:15px;" href="/register.html">Register</a>
+          <a href="/forgot_password.html">Recover Password</a>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+    <footer style="min-height: 100px;"></footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/holder.js"></script>
+  </body>
+</html>
